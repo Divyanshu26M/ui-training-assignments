@@ -14,11 +14,10 @@
     />
 
     <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="resources/style/main.css" />
-    <link rel="stylesheet" href="resources/style/pages/category.css" />
+    <link rel="stylesheet" href="./resources/style/main.css" />
+    <link rel="stylesheet" href="./resources/style/pages/category.css" />
   </head>
   <body>
-   
     <!-- ===== HEADER ===== -->
     <header>
       <button
@@ -112,44 +111,45 @@
             <ul class="filter-menu-top__list"></ul>
             <div class="separator2"></div>
           </nav>
-          <button class="regualr-body-m-16- total-results">SEE 17 RESULTS</button>
+          <button class="regualr-body-m-16- total-results">
+            SEE 17 RESULTS
+          </button>
         </div>
 
         <div
-        id="filter-menu-mobile"
-        class="menu-section__filter-menu menu-section__filter-menu--mobile visibility--hidden"
-        data-visible="false"
-      >
-        <div class="filter-menu-top">
+          id="filter-menu-mobile"
+          class="menu-section__filter-menu menu-section__filter-menu--mobile visibility--hidden"
+          data-visible="false"
+        >
+          <div class="filter-menu-top">
+            <div>
+              <span>Filter</span>
+              <button
+                class="filter-and-sort-btn"
+                aria-controls="filter-menu-mobile"
+                aria-expanded="false"
+                aria-label="Click here to close the filter menu"
+              >
+                <img src="./resources/img/x.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <button id="clear-all">Clear all</button>
+          <div class="separator2"></div>
+          <nav class="filter-menu-mobile__nav">
+            <span>Category</span>
+            <ul class="filter-menu-top__list"></ul>
+            <div class="separator2"></div>
+          </nav>
           <div>
-            <span>Filter</span>
             <button
-              class="filter-and-sort-btn"
-              aria-controls="filter-menu-mobile"
-              aria-expanded="false"
-              aria-label="Click here to close the filter menu"
+              class="btn-primary total-results"
+              id="search-filter total-results-mobile"
             >
-              <img src="./resources/img/x.svg" alt="" />
+              SEE 0 RESULTS
             </button>
           </div>
         </div>
-        <button id="clear-all">Clear all</button>
-        <div class="separator2"></div>
-        <nav class="filter-menu-mobile__nav">
-          <span>Category</span>
-          <ul class="filter-menu-top__list"></ul>
-          <div class="separator2"></div>
-        </nav>
-        <div>
-          <button
-            class="btn-primary total-results"
-            id="search-filter total-results-mobile"
-          >
-            SEE 0 RESULTS
-          </button>
-        </div>
-      </div>
-
       </section>
 
       <!-- ========== Products ========== -->
@@ -238,6 +238,6 @@
     </footer>
 
     <!-- ===== Adding JavaScript ===== -->
-    <script type="module" src="/dist/product.js"></script>
+    <script type="module" src="./resources/script/product.js"></script>
   </body>
 </html>
