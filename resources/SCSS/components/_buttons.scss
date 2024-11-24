@@ -1,0 +1,43 @@
+button {
+  align-items: center;
+  background: transparent;
+  border: none;
+}
+.btn-primary {
+  padding: 0.786em 4.93em;
+  background: var(--primary-brand) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #39373729;
+  border-radius: 10px;
+
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-xs) / 16px var(--unnamed-font-family-muli);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.btn-secondary {
+  padding: 0.786em 2.75em;
+  border: 2px solid #2a65d7;
+  border-radius: 10px;
+  opacity: 1;
+
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-xs) / 16px var(--unnamed-font-family-muli);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-brand);
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn-secondry-reversed {
+  font-size: var(--unnamed-font-size-xs);
+  width: 132px;
+  height: 18px;
+  font-family: var(--unnamed-font-family-muli);
+  font-weight: bold;
+  color: var(--primary-brand);
+  text-align: center;
+  text-transform: uppercase;
+}

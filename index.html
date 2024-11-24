@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Venia provides trending fashionable products."
+    />
+    <title>Venia</title>
+    <!-- ===== FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="resources/style/main.css" />
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <button
+        class="menu"
+        id="menu--btn"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="menu Button"
+      >
+        <img src="resources/img/menu.svg" alt="" />
+      </button>
+      <h1><a href="index.html"> VENIA </a></h1>
+
+      <nav id="navigation" data-visible="false">
+        <ul>
+          <li><a href="men-outerwear.html">Men</a></li>
+          <li><a href="women-clothing.html">Women</a></li>
+          <li><a href="jewelery.html">Jewelery</a></li>
+          <li><a href="electronics.html">Electronics</a></li>
+        </ul>
+      </nav>
+      <a class="cartMenu" href="cart.html"
+        ><img src="resources/img/shopping-bag.svg" alt="Click to open cart"
+      /></a>
+    </header>
+
+    <!-- ===== CAROUSEl ===== -->
+    <section class="carousel">
+      <div class="carousel__hide-buttons">
+        <button
+          class="carousel__button carousel__button--left carousel__button--hidden"
+          aria-label="Go to the previous slide"
+        >
+          <img src="./resources/img/chevron-left.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide carousel__slide--current">
+            <div class="carousel__linear"></div>
+            <img src="./resources/img/carousel_img1.jpeg" alt="" />
+            <div class="carousel__text">
+              <h2 class="display-xl-48-dekstop-only">
+                Shop the new <br />
+                Signature Collection
+              </h2>
+              <p class="regualr-body-m-16-">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+              <button class="btn-primary">SHOP NOW</button>
+            </div>
+          </li>
+          <li class="carousel__slide">
+            <div class="carousel__linear"></div>
+            <img src="./resources/img/promo1.jpeg" alt="" loading="lazy" />
+            <div class="carousel__text">
+              <h2 class="display-xl-48-dekstop-only">
+                Shop the new <br />
+                Signature Collection
+              </h2>
+              <p class="regualr-body-m-16-">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+              <button class="btn-primary">SHOP NOW</button>
+            </div>
+          </li>
+          <li class="carousel__slide">
+            <div class="carousel__linear"></div>
+            <img src="./resources/img/promo2.jpeg" alt="" loading="lazy" />
+            <div class="carousel__text">
+              <h2 class="display-xl-48-dekstop-only">
+                Shop the new <br />
+                Signature Collection
+              </h2>
+              <p class="regualr-body-m-16-">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+              <button class="btn-primary">SHOP NOW</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="carousel__hide-buttons">
+        <button
+          class="carousel__button carousel__button--right"
+          aria-label="Go to the next slide"
+        >
+          <img src="./resources/img/chevron-right.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="carousel__nav">
+        <button
+          aria-label="Carousel Indicators 1"
+          class="carousel__indicator carousel__slide--current"
+        ></button>
+        <button
+          aria-label="Carousel Indicators 2"
+          class="carousel__indicator"
+        ></button>
+        <button
+          aria-label="Carousel Indicators 3"
+          class="carousel__indicator"
+        ></button>
+      </div>
+    </section>
+
+    <main>
+      <!-- ========== CATEGORY LIST ========== -->
+      <section class="category-list" id="category">
+        <!-- ===== WOMEN ===== -->
+        <div class="category-list__item category-list__item--women">
+          <div class="category-list__image">
+            <a href="women-clothing.html">
+              <img src="./resources/img/womens-category.jpeg" alt="" />
+            </a>
+          </div>
+          <div class="category-list__details">
+            <a href="women-clothing.html">
+              <h3>Shop Women</h3>
+            </a>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="separator"></div>
+        </div>
+
+        <!-- ===== MEN ===== -->
+        <div class="category-list__item category-list__item--men">
+          <div class="category-list__image">
+            <a href="men-outerwear.html">
+              <img src="./resources/img/mens-category.jpeg" alt="" />
+            </a>
+          </div>
+          <div class="category-list__details">
+            <a href="men-outerwear.html">
+              <h3>Shop Men</h3>
+            </a>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="separator"></div>
+        </div>
+
+        <!-- ===== JEWELERY ===== -->
+        <div class="category-list__item category-list__item--jewelery">
+          <div class="category-list__image">
+            <a href="jewelery.html">
+              <img src="./resources/img/jewelery-category.jpeg" alt="" />
+            </a>
+          </div>
+          <div class="category-list__details">
+            <a href="jewelery.html">
+              <h3>Jewellery</h3>
+            </a>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="separator"></div>
+        </div>
+
+        <!-- ===== ELECTRONICS ===== -->
+        <div class="category-list__item category-list__item--electronics">
+          <div class="category-list__image">
+            <a href="electronics.html">
+              <img src="./resources/img/electronics-category.jpeg" alt="" />
+            </a>
+          </div>
+          <div class="category-list__details">
+            <a href="electronics.html">
+              <h3>Electronics</h3>
+            </a>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="separator"></div>
+        </div>
+      </section>
+
+      <!-- ========== Promo 1 ========== -->
+      <section class="promo1">
+        <div class="promo1__img">
+          <img loading="lazy" src="./resources/img/promo1-c.jpeg" alt="" />
+        </div>
+        <div>
+          <div class="promo1__container promo1__container--text">
+            <h4 class="display-l-36- display-xl-48-dekstop-only">
+              Take off in the new Signature Legging
+            </h4>
+            <span class="regular-heading-l-20-">Lorem Ipsum Dolor Tempor</span>
+            <p class="regualr-body-m-16-">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor labore dolore magna lorem ipsum dolor sit dolore
+              magna lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="promo1__btns">
+            <button class="btn-primary">SHOP NOW</button>
+            <button class="btn-secondary">SHOP COLLECTION</button>
+          </div>
+          <div class="separator"></div>
+        </div>
+      </section>
+
+      <!-- ========== Promo 2 ========== -->
+      <section class="promo2">
+        <div class="promo2__img">
+          <img
+            loading="lazy"
+            src="./resources/img/promo2.jpeg"
+            alt="A man is standing on the top of the hill"
+          />
+        </div>
+
+        <div class="promo2__container promo2__container--text">
+          <div class="promo2__container--map-pin">
+            <img src="./resources/img/map-pin.svg" alt="" />
+            <div class="separator"></div>
+          </div>
+          <h4 class="display-l-36- display-xl-48-dekstop-only">
+            Conquer your next adventure
+          </h4>
+          <span class="regular-heading-l-20-">Lorem Ipsum Dolor Tempor</span>
+          <button class="btn-secondary">SHOP DEVICES</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== separator ========== -->
+    <div class="separator2"></div>
+
+    <!-- ========== Footer ========== -->
+    <footer>
+      <div class="footer-top">
+        <nav>
+          <ul class="footer-top__account">
+            <li>
+              <a href="#"><span>Account</span></a>
+            </li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+          <ul class="footer-top__about">
+            <li>
+              <a href="#"><span>About Us</span></a>
+            </li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Email Sign Up</a></li>
+            <li><a href="#">Give Back</a></li>
+          </ul>
+          <ul class="footer-top__help">
+            <li>
+              <a href="#"><span>Help</span></a>
+            </li>
+            <li><a href="#">Live Chat</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </nav>
+        <div class="footer-top__followUs">
+          <span>Follow Us!</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+          <div class="footer-top__followUs--socialMedia">
+            <a href="#"
+              ><img src="./resources/img/instagram.svg" alt="instagram"
+            /></a>
+            <a href="#"
+              ><img src="./resources/img/facebook.svg" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="./resources/img/twitter.svg" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-top__separator"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom__termsAndPolicy">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+          <pre>
+       &copy;Company Name
+       Address Ave, City Name, State ZIP</pre
+          >
+        </div>
+        <a class="footer-bottom--logo" href="index.html"> VENIA </a>
+      </div>
+    </footer>
+
+    <!-- ===== Adding JavaScript ===== -->
+    <script src="/dist/home.js"></script>
+  </body>
+</html>

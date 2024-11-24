@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Find Latest women's fashion products." />
+    <title>Venia | Women's Clothing</title>
+    <!-- ===== FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="resources/style/main.css" />
+    <link rel="stylesheet" href="resources/style/pages/category.css" />
+  </head>
+  <body>
+   
+    <!-- ===== HEADER ===== -->
+    <header>
+      <button
+        class="menu"
+        id="menu--btn"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="menu Button"
+      >
+        <img src="resources/img/menu.svg" alt="" />
+      </button>
+      <h1><a href="index.html"> VENIA </a></h1>
+
+      <nav id="navigation" data-visible="false">
+        <ul>
+          <li><a href="men-outerwear.html">Men</a></li>
+          <li><a href="women-clothing.html">Women</a></li>
+          <li><a href="jewelery.html">Jewelery</a></li>
+          <li><a href="electronics.html">Electronics</a></li>
+        </ul>
+      </nav>
+      <a class="cartMenu" href="cart.html"
+        ><img src="resources/img/shopping-bag.svg" alt="Click to open cart"
+      /></a>
+    </header>
+
+    <!-- ========== Page Banner ========== -->
+    <section class="banner">
+      <!-- ========== Hero Image ========== -->
+      <div class="banner__hero-image">
+        <img src="./resources/img/category-hero.jpeg" alt="" />
+      </div>
+
+      <!-- ========== Page Name ========== -->
+      <div class="banner__page-name">
+        <h2>Jewelery</h2>
+        <div class="separator"></div>
+      </div>
+    </section>
+
+    <main class="layout-container">
+      <!-- ========== Breadcrumb ========== -->
+      <div class="breadcrumb">
+        <nav aria-label="breadcrumb">
+          <ul>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Women’s</a></li>
+            <li class="breadcrumb__item breadcrumb__item--active">
+              <a href="#">Outerwear</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- ========== Sort and Result (desktop) ========== -->
+      <div class="result-and-sort">
+        <!-- ===== Result ===== -->
+        <span class="regualr-body-m-16-">38 Results</span>
+
+        <!-- ===== Sort ===== -->
+        <select name="sort" id="sortProducts" aria-label="Sort Products">
+          <option value="popular">Popular</option>
+          <option value="price_dec">Price Low to High</option>
+          <option value="price_aec">Price High to Low</option>
+          <option value="relevence">Relevence</option>
+        </select>
+      </div>
+
+      <!-- ========== Filter, Sort and Result ========== -->
+      <section class="menu-section">
+        <!-- ===== Filter and Sort (Mobile) ===== -->
+        <div class="menu-section__filter-and-sort">
+          <button id="filter-and-sort-btn" class="filter-and-sort-btn">
+            <img src="./resources/img/sliders.svg" alt="" />Filter Results
+          </button>
+          <button>
+            <span>
+              <img src="./resources/img/arrow-up.svg" alt="" />
+              <img src="./resources/img/arrow-down.svg" alt="" />
+            </span>
+            Sort Products
+          </button>
+          <div class="total-results">0 Results</div>
+        </div>
+
+        <!-- ===== Filter Menu/Options ===== -->
+        <div class="filter-menu-top-desktop">
+          <nav>
+            <span>Category</span>
+            <div class="separator2"></div>
+            <ul class="filter-menu-top__list"></ul>
+            <div class="separator2"></div>
+          </nav>
+          <button class="regualr-body-m-16- total-results">SEE 17 RESULTS</button>
+        </div>
+
+        <div
+        id="filter-menu-mobile"
+        class="menu-section__filter-menu menu-section__filter-menu--mobile visibility--hidden"
+        data-visible="false"
+      >
+        <div class="filter-menu-top">
+          <div>
+            <span>Filter</span>
+            <button
+              class="filter-and-sort-btn"
+              aria-controls="filter-menu-mobile"
+              aria-expanded="false"
+              aria-label="Click here to close the filter menu"
+            >
+              <img src="./resources/img/x.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <button id="clear-all">Clear all</button>
+        <div class="separator2"></div>
+        <nav class="filter-menu-mobile__nav">
+          <span>Category</span>
+          <ul class="filter-menu-top__list"></ul>
+          <div class="separator2"></div>
+        </nav>
+        <div>
+          <button
+            class="btn-primary total-results"
+            id="search-filter total-results-mobile"
+          >
+            SEE 0 RESULTS
+          </button>
+        </div>
+      </div>
+
+      </section>
+
+      <!-- ========== Products ========== -->
+      <section class="products" id="jeweleryProducts"></section>
+
+      <!-- ========== PAGE LIST ========== -->
+      <div class="page-list">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#"
+          ><img src="./resources/img/chevron-right.svg" alt="Go to next page"
+        /></a>
+      </div>
+    </main>
+
+    <!-- ========== separator ========== -->
+    <div class="separator2"></div>
+
+    <!-- ========== Footer ========== -->
+    <footer>
+      <div class="footer-top">
+        <nav>
+          <ul class="footer-top__account">
+            <li>
+              <a href="#"><span>Account</span></a>
+            </li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+          <ul class="footer-top__about">
+            <li>
+              <a href="#"><span>About Us</span></a>
+            </li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Email Sign Up</a></li>
+            <li><a href="#">Give Back</a></li>
+          </ul>
+          <ul class="footer-top__help">
+            <li>
+              <a href="#"><span>Help</span></a>
+            </li>
+            <li><a href="#">Live Chat</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </nav>
+        <div class="footer-top__followUs">
+          <span>Follow Us!</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+          <div class="footer-top__followUs--socialMedia">
+            <a href="#"
+              ><img src="./resources/img/instagram.svg" alt="instagram"
+            /></a>
+            <a href="#"
+              ><img src="./resources/img/facebook.svg" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="./resources/img/twitter.svg" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-top__separator"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom__termsAndPolicy">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+          <pre>
+       &copy;Company Name
+       Address Ave, City Name, State ZIP</pre
+          >
+        </div>
+        <a class="footer-bottom--logo" href="index.html"> VENIA </a>
+      </div>
+    </footer>
+
+    <!-- ===== Adding JavaScript ===== -->
+    <script type="module" src="/dist/product.js"></script>
+  </body>
+</html>
