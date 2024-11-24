@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-restricted-globals
-const URL_PATHNAME = location.pathname;
+const URL_PATHNAME = location.pathname.split("/").slice(-1);
 
 const pathNameAndClassname = {
   men: 'men',
